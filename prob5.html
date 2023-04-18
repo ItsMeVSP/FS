@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Color Stack
+        </title>
+    </head>
+    <body id="bdy" background="laven.png">
+        <center><h1>Color inga thaan maarum</h1></center>
+        <script>
+            var colors=new Array();
+            colors[0]=new Image();
+            colors[0].src='red.png';
+            colors[1]=new Image();
+            colors[1].src='green.png';
+            colors[2]=new Image();
+            colors[2].src='blue.png';
+            colors[3]=new Image();
+            colors[3].src='yellow.png';
+            colors[4]=new Image();
+            colors[4].src='black.png';
+            var len=colors.length;            
+            var count=-1;
+            function changeColor()
+            {
+                if(count==-1 || count==len) 
+                {
+                    document.body.background=colors[0].src;
+                    count=1;    
+                } 
+                else 
+                {
+                    document.body.background=colors[count].src;
+                    count++;
+                }
+            }
+            document.addEventListener("click",changeColor);
+        </script>
+    </body>
+</html>
