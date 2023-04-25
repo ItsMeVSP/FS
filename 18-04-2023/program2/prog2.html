@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Program 2</title>
+        <style>
+            ul {
+                padding: 0;
+            }
+            body{
+                font-size: xx-large;
+
+            }
+        </style>
+        <script src="p2.js" defer></script>
+    </head>
+    <body>
+        <h3>Computer Online Store</h3>
+        <label for="part">Select a computer part:</label><br />
+        <select id="part" name="part" style="height: 75px;width: 150px;font-size: 20px;">
+            <option value="" selected disabled>Choose parts</option>
+            <option value="monitors">Monitors</option>
+            <option value="motherboards">Motherboards</option>
+            <option value="chips">Chips</option>
+            <option value="hard-drives">Hard Drives</option>
+            <option value="dvd-roms">DVD-ROMs</option>
+            <option value="cases">Cases</option>
+            <option value="power-supplies">Power Supplies</option>
+        </select>
+        <br />
+        <br />
+        <button id="addParts"style="height: 50px;width: 150px;font-size: 20px;background-color: purple;color:white;">Add Parts</button>
+        <br />
+        <div>
+            <p>Items:</p>
+            <ul id="parts"></ul>
+        </div>
+    </body>
+</html>

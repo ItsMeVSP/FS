@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            input {
+                border: none;
+            }
+            body{
+                font-size: xx-large;
+            }
+            table,
+            tr,
+            th,
+            td {
+                /*border: 2px solid rgb(29, 29, 28)*/;
+            }
+
+            th {
+                text-align: right;
+                color: rgb(0, 153, 255);
+            }
+
+            td {
+                text-align: left;
+                color: rgb(255, 0, 157);
+                font-weight: 600;
+                border: 2px solid rgb(29, 29, 28);
+            }
+            #units,#subsidy{
+                text-align: left;
+                color: rgb(238, 61, 7);
+                font-weight: 600; 
+                font-size: x-large;             
+            }
+        </style>
+        <script src="bill.js" defer></script>
+    </head>
+    <body>
+        <center>
+            <h1>Shan Energies Private Ltd.,</h1>
+            <table>
+            <tr>
+                <th>Consumed Units</th>
+                <td>
+                    <input type="number" id="units" placeholder="units" />
+                </td>
+            </tr>
+            <tr>
+                <th>Total current charges</th>
+                <td class="totalCurrentCharges"></td>
+            </tr>
+            <tr>
+                <th>Current charges Rs.</th>
+                <td class="currentCharges"></td>
+            </tr>
+            <tr>
+                <th>Fixex Cost Rs. (+)</th>
+                <td>50.0</td>
+            </tr>
+            <tr>
+                <th>Subsidy Fixed Cost Rs.(-)</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th>New Subsidy Rs.(-)</th>
+                <td>
+                    <input type="number" id="subsidy" placeholder="subsidy" />
+                </td>
+            </tr>
+            <tr>
+                <th>Net Amount Rs.</th>
+                <td class="netAmount"></td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>

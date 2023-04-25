@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithi Vending Machine</title>
+    <style>
+        body{
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="background-color: chartreuse;">Adithi Vending Machine</h1>
+	<b><label for="size">Select the Stationery Id:</label></b>
+    <select name = "itemId" id="itemId" style="height: 60px;width: 90px;font-size: larger;">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+	<br><br>
+	<button onclick="sale()"style="height: 80px;width: 150px;font-size: larger;color: white;background-color:green;">Purchase</button><br /><br />
+	<button onclick="checkStock()"style="height: 80px;width: 150px;font-size: larger;color: white;background-color:green;">Check Stock</button>
+	<br><br>
+	<h3><label id="result" style="color: crimson;"></label></h3>
+    <script src = "vending_machine.js"></script>
+    </center>
+</body>
+</html>

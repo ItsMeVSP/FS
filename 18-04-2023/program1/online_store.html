@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Form</title>
+        <style>
+            input {
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+
+            input:focus {
+                outline: none;
+            }
+            #formContainer {
+                display: inline-block;
+            }
+        </style>
+        <script src="store.js" defer></script>
+    </head>
+    <body>
+        <h1>Order Form</h1>
+        <p>Enter your city:</p>
+        <select name="city" id="city">
+            <option value="mas">Chennai</option>
+            <option value="cbe">Coimbatore</option>
+            <option value="mdu">Madurai</option>
+            <option value="sal">Salem</option>
+            <option value="tpj">Trichy</option>
+            <option value="tut">Tuticorin</option>
+        </select>
+        <button id="genForm">Generate Form</button>
+        <br /><br />
+        <div id="formContainer"></div>
+    </body>
+</html>
