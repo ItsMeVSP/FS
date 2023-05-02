@@ -1,0 +1,36 @@
+<html>
+	<head>
+	</head>
+	<center>
+		<body>
+			<h1>Phone number validator</h1>
+			<form>
+				<label for="mobno">Enter Your Mobile Number:</label>
+				<input type="text" id="mobno"><br><br>
+				<button type="button" id="sub" onclick="numgetter()">Validate</button>
+			</form>
+			<h3 id="res">The result will be displayed here</h3>
+			<script language="javascript">
+				function numgetter() 
+				{
+					var num=document.getElementById("mobno").value;
+					var res=containsPhone(num);
+                    document.getElementById("res").innerHTML=res;
+				}
+				function containsPhone(phno)
+				{
+					var pat1=/\(?[0-9]{3}\)?[-]?([0-9]{3})[-]?([0-9]{4})/;
+					var last=pat1.test(phno)
+                    if (last==true) 
+					{
+						return true;	
+					} 
+					else 
+					{
+						return false;
+					}
+				}
+			</script>
+		</body>
+	</center>
+</html>
