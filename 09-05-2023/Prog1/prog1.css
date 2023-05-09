@@ -1,0 +1,15 @@
+.list{
+    font-size: x-large;
+    line-height: 50px;
+    
+}
+.end{
+    background-color: rgb(6, 255, 6);
+    
+}
+.going{
+    background-color: rgb(251, 255, 6);
+}
+.next{
+    background-color: rgb(255, 6, 6);
+}
