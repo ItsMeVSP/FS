@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.alarm-clock{
+  font-family: 'Martian Mono', monospace;
+  color: azure;
+}
+#title{
+  border-style: dashed;
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;
+}
+.current-time,.alarm-control{
+  /* border-style: dashed; */
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+}
+.alarmset{
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(44, 44, 44);
+  color: azure;
+  border-color: rgb(255, 166, 0);
+  border-width: 5px;
+}
+/* .alarmset::content{
+  font-weight: 800;
+  font-size: 70px;
+} */
+button{
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Martian Mono', monospace;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(44, 44, 44);
+  color: azure;
+  border-color: rgb(255, 166, 0);
+  border-width: 5px;
+}
