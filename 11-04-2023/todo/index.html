@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        TO-DO
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Victor+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body onload="todo()">
+    <center>
+    <div class="container">
+        <h1>BRUCE WAYNE TO-DO LIST</h1>
+        <label for="add">Add Task:</label>
+        <input type="text" id="addTask"/>
+        <button type="button" id="addBtn">Add Task</button><br><br>
+        <label for="show">Next Task:</label>
+        <input type="text" id="showTask"/>
+        <button type="button" id="showBtn">Show Next Task</button><br><br>
+        <p>Task List:</p>
+        <textarea id="list"></textarea>
+    </div>
+</center>
+    <script src="./js/task.js"></script>
+</body>
+</html>
